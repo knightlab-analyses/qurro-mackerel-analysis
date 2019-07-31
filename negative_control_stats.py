@@ -65,5 +65,11 @@ print(
 )
 
 if len(n_c_samples_with_query) > 0:
-    print('"{}"-matching features:'.format(tax_query))
-    print(n_c_samples_with_query)
+    print(
+        'Negative control samples containing at least one "{}"-matching feature:'.format(
+            tax_query
+        )
+    )
+    ncswq_list = list(n_c_samples_with_query)
+    for i in range(len(ncswq_list)):
+        print("{}) {}".format(i + 1, ncswq_list[i]))
