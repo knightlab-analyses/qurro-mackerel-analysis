@@ -6,7 +6,7 @@ import pandas as pd
 from qiime2 import Artifact, Metadata
 from qurro._df_utils import biom_table_to_sparse_df
 
-OUT_DIR = "20190726_MackerelAnalysisOutput"
+OUT_DIR = "20190731_MackerelAnalysisOutput"
 TABLE_QZA_FILEPATH = os.path.join(OUT_DIR, "table-unfiltered.qza")
 TAXONOMY_QZA_FILEPATH = os.path.join(OUT_DIR, "taxonomy.qza")
 METADATA_FILEPATH = os.path.join(OUT_DIR, "metadata.tsv")
@@ -35,12 +35,21 @@ c_sample_md = md[md["empo_1"] == "control"]
 n_c_samples = c_sample_md[c_sample_md["empo_2"] == "negative"].index
 
 # Identify all features whose taxonomy annotations contain tax_query
-query_features = tax[tax["Taxon"].str.find(tax_query) != -1].index
+query_features = tax[
+    tax["Taxon"].str.lower().str.find(tax_query.lower()) != -1
+].index
+matching_feature_ct = len(query_features)
+# Yeah, I know this will say "1 features'" if only 1 feature matched, but I
+# don't think it's worth making the code a whole lot uglier to address that
 print(
     'Identified "{}" in {} features\' taxonomy annotations.'.format(
-        tax_query, len(query_features)
+        tax_query, matching_feature_ct
     )
 )
+
+# If no features matched the query, no reason to go any further down
+if matching_feature_ct == 0:
+    quit()
 
 # Make a copy of the table filtered to just the features matching tax_query
 tbl_query = tbl.filter(query_features, axis="observation", inplace=False)
@@ -52,7 +61,7 @@ df_tbl_query = biom_table_to_sparse_df(tbl_query, min_row_ct=1, min_col_ct=1)
 samples_with_query = df_tbl_query.columns[df_tbl_query.sum(axis="index") > 0]
 print(
     "Identified {} samples containing at least one of those {} "
-    "features.".format(len(samples_with_query), len(query_features))
+    "features.".format(len(samples_with_query), matching_feature_ct)
 )
 
 # ...Filter this to just *negative control* samples
