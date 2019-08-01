@@ -57,7 +57,7 @@ tbl_query = tbl.filter(query_features, axis="observation", inplace=False)
 # Load this filtered table as a pandas SparseDataFrame.
 df_tbl_query = biom_table_to_sparse_df(tbl_query, min_row_ct=1, min_col_ct=1)
 
-# Find all samples containing at least one count of a "Shewanella feature"
+# Find all samples containing at least one count of a matching feature
 samples_with_query = df_tbl_query.columns[df_tbl_query.sum(axis="index") > 0]
 print(
     "Identified {} samples containing at least one of those {} "
