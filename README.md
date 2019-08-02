@@ -9,7 +9,7 @@ manuscript, which is in preparation.
 
 The analysis is done in the `Mackerel 16S Data Analysis.ipynb` Jupyter
 Notebook. We recommend using nbviewer to view the notebook
-([here's a link to the notebook on nbviewer](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb)).
+([**here's a link**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb)).
 
 ## `negative_control_stats.py`
 This is a small script that looks through the annotated taxonomies of all
