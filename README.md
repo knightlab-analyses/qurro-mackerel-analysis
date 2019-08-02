@@ -22,8 +22,8 @@ re-analysis notebook we use a sample exclusion cutoff determined by
 but it is a quick way to validate that whatever features we investigate in the
 manuscript's case study within Qurro probably aren't contaminants.
 
-Here's some examples of using this script to look for certain taxonomy names in
-negative control samples (the script accepts one query at a time, and it's
+Here are some examples of using this script to look for certain taxonomy names
+in negative control samples (the script accepts one query at a time, and it's
 case-insensitive).
 
 ```bash
