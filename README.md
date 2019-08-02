@@ -72,4 +72,4 @@ is fairly large -- so for simplicity's sake I've just removed these files.
 
 (The Greengenes 13_8 99% database should be publicly available online; see,
 e.g., [this page on the QIIME 2 2019.7 documentation](https://docs.qiime2.org/2019.7/data-resources/)
-for a link to the database.
+for a link to the database.)
