@@ -7,18 +7,18 @@ performs a simple re-analysis of mackerel and environmental sample 16S data
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
 manuscript, which is in preparation.
 
-We recommend using nbviewer to view the notebooks
-([**here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb)).
+We recommend using nbviewer to view the notebooks in this repository
+([**here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the Fig. 1(d) notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Fig1d/Gill%20Samples%20Linear%20Regression.ipynb)).
 
-## Other folders/files in this repository
+The rest of this README describes the other folders/files in this repository.
 
-### `20190731_MackerelAnalysisOutput/`
+## `20190731_MackerelAnalysisOutput/`
 This folder just contains the output from the main notebook
 (`Mackerel 16S Data Analysis.ipynb`). Due to doing things late at night, I
 think all of the files in this folder were actually generated on August 1, 2019
 (sorry for any confusion).
 
-#### Omitted database files
+### Omitted database files
 Two large files have been omitted from this directory:
 `gg_13_8_99_otus.qza` and `gg_13_8_99_taxonomy.qza`.
 These are just imported versions of the Greengenes
@@ -29,7 +29,7 @@ is fairly large -- so for simplicity's sake I've just removed these files.
 e.g., [this page on the QIIME 2 2019.7 documentation](https://docs.qiime2.org/2019.7/data-resources/)
 for a link to the database.)
 
-### `Fig1d/`
+## `Fig1d/`
 The Jupyter notebook in this folder (`Gill Samples Linear Regression.ipynb`)
 uses exported data from the Qurro visualization
 generated in the analysis (`g_shew_over_o_syn_age.tsv`) as the starting point
@@ -41,7 +41,7 @@ in the Qurro manuscript.**
 The output of this notebook is `gill_lr.pdf`, which was the starting
 point for Figure 1(d)).
 
-### `negative_control_stats.py`
+## `negative_control_stats.py`
 This is a small script that looks through the annotated taxonomies of all
 features present in the negative control samples. It's handy for checking
 that certain features are (for the most part) absent from these samples.
