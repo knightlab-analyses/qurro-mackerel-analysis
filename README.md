@@ -1,4 +1,7 @@
 # qurro-mackerel-analysis
+
+## What is this repository?
+
 This main Jupyter notebook in this repository (`Mackerel 16S Data Analysis.ipynb`)
 performs a simple re-analysis of mackerel and environmental sample 16S data
 ([Qiita study ID 11721](https://qiita.ucsd.edu/study/description/11721)) in
@@ -10,6 +13,24 @@ manuscript, which is in preparation.
 We recommend using nbviewer to view the notebooks in this repository
 ([**here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the Fig. 1(d) notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Fig1d/Gill%20Samples%20Linear%20Regression.ipynb)).
 
+## What are the system requirements for the notebooks/code in this repository?
+The main analysis notebook assumes the presence of various files on the current
+system (it was ran on Barnacle, [a cluster used by our lab](https://knightlab.ucsd.edu/wordpress/wp-content/uploads/2016/04/Knight-Lab-Facilities-Resources-and-Equipment.pdf)). If you'd like to rerun this notebook yourself, you can just modify the
+environment variables declared in **section 0.1** of the notebook to match the
+locations of files on your system.
+
+Furthermore, it's assumed that:
+
+- you are within a QIIME 2 conda environment (of a QIIME 2 version >= 2019.7).
+- Qurro is installed
+- Songbird is installed
+
+See the notebook regarding the exact versions of Qurro and Songbird used in the
+notebook -- the notebook was run using versions of these
+packages that didn't match with an official release.
+
+## Why is this README so long?
+Sorry about that!
 The rest of this README describes the other folders/files in this repository.
 
 ## `20190731_MackerelAnalysisOutput/`
