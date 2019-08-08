@@ -4,7 +4,9 @@
 
 This main Jupyter notebook in this repository (`Mackerel 16S Data Analysis.ipynb`)
 performs a simple re-analysis of mackerel and environmental sample 16S data
-([Qiita study ID 11721](https://qiita.ucsd.edu/study/description/11721)) in
+([Qiita study ID 11721](https://qiita.ucsd.edu/study/description/11721),
+and described in
+[Minich et al. 2019](https://www.biorxiv.org/content/10.1101/721555v1)) in
 [QIIME 2](https://qiime2.org/),
 [Songbird](https://github.com/biocore/songbird/),
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
@@ -69,7 +71,12 @@ that certain features are (for the most part) absent from these samples.
 
 This obviously isn't a very formal way of accounting for contamination (in the
 main re-analysis notebook we use a sample exclusion cutoff determined by
-[KatharoSeq](https://msystems.asm.org/content/3/3/e00218-17.abstract)),
+[KatharoSeq](https://msystems.asm.org/content/3/3/e00218-17.abstract) as
+discussed in this dataset's
+[corresponding manuscript](https://www.biorxiv.org/content/10.1101/721555v1) --
+the dataset's manuscript also describes a hybrid DNA extraction
+approach taken to reduce well-to-well contamination -- see
+[this paper](https://msystems.asm.org/content/4/4/e00186-19.abstract)),
 but it is a quick way to validate that whatever features we investigate in the
 manuscript's case study within Qurro probably aren't contaminants.
 
