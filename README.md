@@ -64,7 +64,7 @@ This folder also contains `final.pdf`, which is just the exported version of
 
 ### `Fig1abc/`
 This folder contains exported versions of the rank plot, sample plot (boxplot),
-and sample plot (scatterplot, using `age\_2` as the x-axis) from a Qurro
+and sample plot (scatterplot, using `age_2` as the x-axis) from a Qurro
 visualization of the mackerel dataset (using the Songbird differentials
 computed in the main analysis notebook in this repository). These exported
 versions have been edited in the [Vega Editor](https://vega.github.io/editor)
