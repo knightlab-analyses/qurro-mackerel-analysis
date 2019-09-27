@@ -27,19 +27,16 @@ Furthermore, it's assumed that:
 - Qurro is installed
 - Songbird is installed
 
-See the notebook regarding the exact versions of Qurro and Songbird used in the
-notebook -- the notebook was run using versions of these
-packages that didn't match with an official release.
+See the notebook regarding the exact versions of the QIIME 2 plugins (including
+Qurro and Songbird) used in this analysis.
 
 ## Why is this README so long?
 ...Sorry about that!
 The rest of this README describes the other folders/files in this repository.
 
-## `20190731_MackerelAnalysisOutput/`
+## `AnalysisOutput/`
 This folder just contains the output from the main notebook
-(`Mackerel 16S Data Analysis.ipynb`). Due to doing things late at night, I
-think all of the files in this folder were actually generated on August 1, 2019
-(sorry for any confusion).
+(`Mackerel 16S Data Analysis.ipynb`).
 
 ### Omitted database files
 Two large files have been omitted from this directory:
@@ -53,6 +50,8 @@ e.g., [this page on the QIIME 2 2019.7 documentation](https://docs.qiime2.org/20
 for a link to the database.)
 
 ## `Fig1/`
+**NOTE: The figures in this folder are out of date. I need to redo these now
+that I redid the analysis.**
 This folder contains `final.odg`, a
 [LibreOffice Draw](https://www.libreoffice.org/discover/draw/) file I used to
 create Figure 1. (For the most part, I just stitched together the input SVG/PDF
