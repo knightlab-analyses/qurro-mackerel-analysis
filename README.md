@@ -66,37 +66,3 @@ uses exported data from the Qurro visualization
 generated in the analysis (`g_shew_over_o_syn_age.tsv`) as the starting point
 for performing linear regression to evaluate the correlation between estimated
 fish age and the *Shewanella*:*Synechococcales* log-ratio.
-
-## `negative_control_stats.py`
-This is a small script that looks through the annotated taxonomies of all
-features present in the negative control samples. It's handy for checking
-that certain features are (for the most part) absent from these samples.
-
-This obviously isn't a very formal way of accounting for contamination (in the
-main re-analysis notebook we use a sample exclusion cutoff determined by
-[KatharoSeq](https://msystems.asm.org/content/3/3/e00218-17.abstract) as
-discussed in this dataset's
-[corresponding manuscript](https://www.biorxiv.org/content/10.1101/721555v1) --
-the dataset's manuscript also describes a hybrid DNA extraction
-approach taken to reduce well-to-well contamination -- see
-[this paper](https://msystems.asm.org/content/4/4/e00186-19.abstract)),
-but it is a quick way to validate that whatever features we investigate in the
-manuscript's case study within Qurro probably aren't contaminants.
-
-Here are some examples of using this script to look for certain taxonomy names
-in negative control samples (the script accepts one query at a time, and it's
-case-insensitive).
-
-```bash
-$ ./negative_control_stats.py shewanella
-Identified "shewanella" in 174 features' taxonomy annotations.
-Identified 503 samples containing at least one of those 174 features.
-Of the 78 negative control samples, 1 contain(s) at least one "shewanella"-matching feature.
-Negative control samples containing at least one "shewanella"-matching feature:
-1) 11721.ep25ul.1000nl.ntc.2
-
-$ ./negative_control_stats.py synechococcales
-Identified "synechococcales" in 182 features' taxonomy annotations.
-Identified 831 samples containing at least one of those 182 features.
-Of the 78 negative control samples, 0 contain(s) at least one "synechococcales"-matching feature.
-```
