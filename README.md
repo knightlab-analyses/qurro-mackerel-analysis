@@ -38,17 +38,6 @@ The rest of this README describes the other folders/files in this repository.
 This folder just contains the output from the main notebook
 (`Mackerel 16S Data Analysis.ipynb`).
 
-### Omitted database files
-Two large files have been omitted from this directory:
-`gg_13_8_99_otus.qza` and `gg_13_8_99_taxonomy.qza`.
-These are just imported versions of the Greengenes
-13_8 99% database information. The `gg_13_8_99_otus.qza` file, in particular,
-is fairly large -- so for simplicity's sake I've just removed these files.
-
-(The Greengenes 13_8 99% database should be publicly available online; see,
-e.g., [this page on the QIIME 2 2019.7 documentation](https://docs.qiime2.org/2019.7/data-resources/)
-for a link to the database.)
-
 ## `Fig1/`
 **NOTE: The figures in this folder are out of date. I need to redo these now
 that I redid the analysis.**
