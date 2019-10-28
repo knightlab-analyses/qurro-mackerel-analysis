@@ -38,6 +38,19 @@ The rest of this README describes the other folders/files in this repository.
 This folder just contains the output from the main notebook
 (`Mackerel 16S Data Analysis.ipynb`).
 
+### Viewing these artifacts/visualizations
+You can view all of the QIIME 2 artifact/visualization files here in
+[q2view](https://view.qiime2.org/) by providing a URL of the format
+`https://raw.githubusercontent.com/knightlab-analyses/qurro-mackerel-analysis/master/AnalysisOutput/songbird-regression-summary.qzv`,
+where you can replace `songbird-regression-summary.qzv` with whatever the QZA/QZV file you want to view is named.
+
+Examples that'll take you straight to q2view:
+
+ - [Imported feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Ftable-unfiltered-summary.qzv)
+ - [Imported and filtered feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Ftable-summary.qzv)
+ - [Songbird diagnostic plots](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fsongbird-regression-summary.qzv)
+ - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fqurro-plot.qzv)
+
 ## `Fig1/`
 **NOTE: The figures in this folder are out of date. I need to redo these now
 that I redid the analysis.**
