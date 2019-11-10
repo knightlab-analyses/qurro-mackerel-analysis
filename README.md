@@ -12,8 +12,8 @@ and described in
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
 manuscript, which is in preparation.
 
-We recommend using nbviewer to view the notebooks in this repository
-([**here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the Fig. 1(d) notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Fig1/Fig1d/ProduceFig1d.ipynb)).
+We recommend using nbviewer to view the notebooks in this repository.
+[**Here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the notebook that produces Figs. 1(d) and 2(d)**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb).
 
 ## What are the system requirements for the notebooks/code in this repository?
 The main analysis notebook assumes the presence of various files on the current
@@ -30,11 +30,7 @@ Furthermore, it's assumed that:
 See the notebook regarding the exact versions of the QIIME 2 plugins (including
 Qurro and Songbird) used in this analysis.
 
-## Why is this README so long?
-...Sorry about that!
-The rest of this README describes the other folders/files in this repository.
-
-## `AnalysisOutput/`
+## About the `AnalysisOutput/` folder
 This folder just contains the output from the main notebook
 (`Mackerel 16S Data Analysis.ipynb`).
 
@@ -51,5 +47,8 @@ Examples that'll take you straight to q2view:
  - [Songbird diagnostic plots](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fsongbird-regression-summary.qzv)
  - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fqurro-plot.qzv)
 
-## `figures/`
-Please see the [README describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
+## About the `figures/` folder
+Please see the [README in this folder describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
+
+## Why did you make this README so long?
+...Sorry about that!
