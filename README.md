@@ -51,5 +51,5 @@ Examples that'll take you straight to q2view:
  - [Songbird diagnostic plots](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fsongbird-regression-summary.qzv)
  - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fqurro-plot.qzv)
 
-## `figures`
+## `figures/`
 Please see the [README describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
