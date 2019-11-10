@@ -28,7 +28,12 @@ different way than files with `scatterplot` in their name.
 ## `final-svgs/`
 This directory contains the SVG files exported from the HTML files in
 `htmls-with-pretty-figures/`. This was done manually (i.e. by me opening up
-each HTML file in Chromium and **TODO**).
+each figure's HTML file in Firefox version 69.0 on an Xubuntu laptop and
+choosing the `Save as SVG` option).
+
+(For some reason, Chromium 76.0.3809.100 on Xubuntu cut off the color field
+labels for some of the plots; since Firefox didn't do this, I assume this is a
+browser problem. This is why I'm listing out the browser versions here.)
 
 ## `logratios.tsv` and `10_logratios.tsv`
 These files contain data exported from the sample plot. In particular, both
