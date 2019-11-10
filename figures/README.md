@@ -6,12 +6,20 @@ Bottom 10% log-ratio, and the other JSONs are from the Shewanella :
 Synechococcales log-ratio.
 
 ## `biggify.py`, `output_template.html`, and `htmls-with-pretty-figures/`
-This Python 3 script goes through `raw-jsons/` and alters the Vega-Lite JSON
-specs in various ways (decreasing the numbers of ticks, increasing font sizes,
-etc.) in order to make these plots more readable in the Qurro paper.
-Furthermore, it'll produce an HTML file for each JSON spec in the
+`biggify.py` is a Python 3 script that goes through `raw-jsons/` and alters
+each Vega-Lite JSON spec in various ways (decreasing the numbers of ticks,
+increasing font sizes, etc.) in order to make the plots described by these specs
+more readable in the Qurro paper.
+Furthermore, this script will produce an HTML file for each JSON spec in the
 `htmls-with-pretty-figures/` directory: this HTML file is based on the contents
 of `output_template.html`.
+
+The reason we do things this way is 1) so that we can automate these changes
+for arbitrary specs, and 2) so that we can use versions of Vega, Vega-Lite, and
+Vega-Embed that roughly match with what Qurro currently uses. (Due to Vega\*
+version updates, loading these plots in the Vega Editor produces slightly
+different-looking outputs.) Thanks to Dominik Moritz for suggesting this
+general idea for working with relatively old versions of Vega\*.
 
 This script adjusts its modifications somewhat based on the name of the
 JSON filename -- e.g. files with `rankplot` in their name are modified in a
