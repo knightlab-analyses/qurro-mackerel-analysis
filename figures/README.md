@@ -53,7 +53,9 @@ Please read the notebook for more details.
 Finally! This directory contains the LibreOffice Draw ODG files produced by
 combining all of the output figures (everything in `pretty-svgs/`,
 `fig1d.pdf`, and `fig2d.pdf`) into two separate figures: `fig1.odg` and
-`fig2.odg`.
+`fig2.odg`. (Aside from rescaling, the only modification "to the
+figures" done here was adding labels to the Numerator and Denominator text in
+the rank plot legends.)
 
 This directory also contains the PDF files produced by exporting these ODG
 files into PDFs from LibreOffice Draw (using the "lossless compression" option).
