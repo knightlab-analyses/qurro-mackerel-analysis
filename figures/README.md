@@ -25,7 +25,7 @@ This script adjusts its modifications somewhat based on the name of the
 JSON filename -- e.g. files with `rankplot` in their name are modified in a
 different way than files with `scatterplot` in their name.
 
-## `final-svgs/`
+## `pretty-svgs/`
 This directory contains the SVG files exported from the HTML files in
 `htmls-with-pretty-figures/`. This was done manually (i.e. by me opening up
 each figure's HTML file in Firefox version 69.0 on an Xubuntu laptop and
@@ -48,3 +48,15 @@ was selected.
 The Jupyter Notebook uses the aforementioned `logratios.tsv` and
 `10_logratios.tsv` files to produce `fig1d.pdf` and `fig2d.pdf`, respectively.
 Please read the notebook for more details.
+
+## `final-libreoffice-drawings/`
+Finally! This directory contains the LibreOffice Draw ODG files produced by
+combining all of the output figures (everything in `pretty-svgs/`,
+`fig1d.pdf`, and `fig2d.pdf`) into two separate figures: `fig1.odg` and
+`fig2.odg`.
+
+This directory also contains the PDF files produced by exporting these ODG
+files into PDFs from LibreOffice Draw (using the "lossless compression" option).
+
+## Did you really need to be that detailed? Sheesh.
+I mean, probably not, but better safe than sorry.
