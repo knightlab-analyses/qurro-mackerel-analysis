@@ -10,45 +10,39 @@ and described in
 [QIIME 2](https://qiime2.org/),
 [Songbird](https://github.com/biocore/songbird/),
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
-manuscript, which is in preparation.
+manuscript.
 
 We recommend using nbviewer to view the notebooks in this repository.
 [**Here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the notebook that produces Figs. 1(d) and 2(d)**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb).
 
-## What are the system requirements for the notebooks/code in this repository?
-The main analysis notebook assumes the presence of various files on the current
-system (it was ran on Barnacle, [a cluster used by our lab](https://knightlab.ucsd.edu/wordpress/wp-content/uploads/2016/04/Knight-Lab-Facilities-Resources-and-Equipment.pdf)). If you'd like to rerun this notebook yourself, you can just modify the
-environment variables declared in **section 0.1** of the notebook to match the
-locations of files on your system.
+## About the `input/` folder
+This folder contains the input data for this analysis notebook (note that SILVA
+database files are not included; as the notebook describes, you'll have to
+download those yourself if you want to rerun this analysis). This input data
+should match the data on Qiita for this study, at least as of November 10,
+2019.
 
-Furthermore, it's assumed that:
-
-- you are within a QIIME 2 conda environment (of a QIIME 2 version >= 2019.7).
-- Qurro is installed
-- Songbird is installed
-
-See the notebook regarding the exact versions of the QIIME 2 plugins (including
-Qurro and Songbird) used in this analysis.
-
-## About the `AnalysisOutput/` folder
-This folder just contains the output from the main notebook
-(`Mackerel 16S Data Analysis.ipynb`).
+## About the `output/` folder
+This folder contains most of the output from the main notebook
+(`Mackerel 16S Data Analysis.ipynb`). Yes, this includes the imported
+SILVA database files. The imported 16S sequence artifact is just small enough
+(about 90 MB) to fit under GitHub's 100 MB single-file limit.
 
 ### Viewing these artifacts/visualizations
 You can view all of the QIIME 2 artifact/visualization files here in
 [q2view](https://view.qiime2.org/) by providing a URL of the format
-`https://raw.githubusercontent.com/knightlab-analyses/qurro-mackerel-analysis/master/AnalysisOutput/songbird-regression-summary.qzv`,
+`https://raw.githubusercontent.com/knightlab-analyses/qurro-mackerel-analysis/master/output/songbird-regression-summary.qzv`,
 where you can replace `songbird-regression-summary.qzv` with whatever the QZA/QZV file you want to view is named.
 
 Examples that'll take you straight to q2view:
 
- - [Imported feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Ftable-unfiltered-summary.qzv)
- - [Imported and filtered feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Ftable-summary.qzv)
- - [Songbird diagnostic plots](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fsongbird-regression-summary.qzv)
- - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2FAnalysisOutput%2Fqurro-plot.qzv)
+ - [Imported feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Ftable-unfiltered-summary.qzv)
+ - [Imported and filtered feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Ftable-summary.qzv)
+ - [Songbird diagnostic plots](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Fsongbird-regression-summary.qzv)
+ - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Fqurro-plot.qzv)
 
 ## About the `figures/` folder
 Please see the [README in this folder describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
 
 ## Why did you make this README so long?
-...Sorry about that!
+It's not *that* long!
