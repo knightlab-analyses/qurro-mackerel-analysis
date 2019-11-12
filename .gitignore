@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 # LibreOffice lock files
 .~lock*
+# Don't include (mostly huge) SILVA files in the repo
+silva*.qza
