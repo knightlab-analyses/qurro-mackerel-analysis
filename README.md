@@ -24,9 +24,14 @@ should match the data on Qiita for this study, at least as of November 10,
 
 ## About the `output/` folder
 This folder contains most of the output from the main notebook
-(`Mackerel 16S Data Analysis.ipynb`). Yes, this includes the imported
-SILVA database files. The imported 16S sequence artifact is just small enough
-(about 90 MB) to fit under GitHub's 100 MB single-file limit.
+(`Mackerel 16S Data Analysis.ipynb`).
+
+As you can see from this repository's `.gitignore` file, files with names
+matching the pattern `silva*.qza` are not included; this is because most of
+these files are pretty large, and GitHub
+yelled at me when I tried to commit them to this repository (so I had to [do
+this](https://help.github.com/en/github/managing-large-files/removing-files-from-a-repositorys-history)
+and remove these files from the repository + repository history).
 
 ### Viewing these artifacts/visualizations
 You can view all of the QIIME 2 artifact/visualization files here in
