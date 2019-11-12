@@ -26,11 +26,11 @@ should match the data on Qiita for this study, at least as of November 10,
 This folder contains most of the output from the main notebook
 (`Mackerel 16S Data Analysis.ipynb`).
 
-As you can see from this repository's `.gitignore` file, files with names
-matching the pattern `silva*.qza` are not included; this is because most of
-these files are pretty large, and GitHub
-yelled at me when I tried to commit them to this repository (so I had to [do
-this](https://help.github.com/en/github/managing-large-files/removing-files-from-a-repositorys-history)
+As you can see from this repository's `.gitignore` file, files in his directory
+with names matching the pattern `silva*.qza` are not included; this is because
+most of these files are pretty large, and GitHub yelled at me when I tried to
+commit them to this repository (so I had to
+[do this](https://help.github.com/en/github/managing-large-files/removing-files-from-a-repositorys-history)
 and remove these files from the repository + repository history).
 
 ### Viewing these artifacts/visualizations
