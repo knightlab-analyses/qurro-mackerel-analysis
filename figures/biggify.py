@@ -71,12 +71,12 @@ for json_filepath in os.listdir("raw-jsons"):
         # hide title for x-axis
         # (None should get converted to null when we call json.dumps())
         spec["encoding"]["x"]["axis"]["title"] = None
-        # set y-axis tick count to 3
-        spec["encoding"]["y"]["axis"]["tickCount"] = 3
+        # set y-axis tick count to 4
+        spec["encoding"]["y"]["axis"]["tickCount"] = 4
 
     # 4. modifications for just scatter plots
     if "scatterplot" in json_filepath:
-        spec["encoding"]["y"]["axis"]["tickCount"] = 3
+        spec["encoding"]["y"]["axis"]["tickCount"] = 4
         spec["encoding"]["x"]["axis"]["tickCount"] = 5
         spec["encoding"]["x"]["title"] = "Estimated fish age (age_2)"
 

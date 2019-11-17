@@ -97975,14 +97975,14 @@
       }
     ],
     "x": {
-      "axis": {
-        "labelAngle": -45
-      },
       "field": "sample_type_body_site",
       "scale": {
         "zero": false
       },
-      "type": "nominal"
+      "type": "nominal",
+      "axis": {
+        "labelAngle": -45
+      }
     },
     "y": {
       "field": "qurro_balance",
