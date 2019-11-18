@@ -1,7 +1,7 @@
 # Qurro paper figures
 ## `raw-jsons/`
 This directory includes the Vega-Lite JSON specs output from various Qurro
-plots. In particular, the JSONs that start with `10_` are from the Top 10% :
+plots. In particular, the JSONs that start with `10_` are from the Shewanella :
 Bottom 10% log-ratio, and the other JSONs are from the Shewanella :
 Synechococcales log-ratio.
 
@@ -40,7 +40,7 @@ These files contain data exported from the sample plot. In particular, both
 files were exported while the scatterplot had its x-axis field set to `age_2`
 and its color field set ot `sample_type_body_site`.
 As with the JSONs described above, the TSV file that starts with `10_` was
-exported while the Top 10% : Bottom 10% log-ratio was selected, and the
+exported while the Shewanella : Bottom 10% log-ratio was selected, and the
 other TSV file was exported while the Shewanella : Synechococcales log-ratio
 was selected.
 
