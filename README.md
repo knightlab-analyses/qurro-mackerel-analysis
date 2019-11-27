@@ -12,6 +12,10 @@ and described in
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
 manuscript.
 
+There are some other notebooks and files in this repository that were used in
+the process of preparing the manuscript, also. Here I'll try to explain some of
+these.
+
 ## Jupyter Notebooks
 We recommend using [nbviewer](https://nbviewer.jupyter.org/) to view the
 notebooks in this repository:
