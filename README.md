@@ -58,7 +58,7 @@ Here are some links that'll take you straight to q2view:
  - [Output Qurro plot (uses a development version of Qurro)](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Fqurro-plot.qzv)
 
 ## About the `figures/` folder
-Please see the [README in this folder describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
+Please see the [README in this folder describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures). The script mentioned in the implementation section (for editing Vega-Lite specifications to make text bigger, etc.) is available in this folder as `biggify.py`.
 
 ## Why did you make this README so long?
 Hey, it's not *that* long!
