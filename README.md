@@ -20,7 +20,7 @@ notebooks in this repository:
 
 - [**Here's a link to the notebook that produces Figs. 1(d) and 2(d)**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb), as mentioned in the figure captions.
 
-- [**Here's a link to the sample dropout analysis notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/SampleDropoutAnalysis.ipynb) mentioned in section 3 of the supplementary information.
+- [**Here's a link to the sample dropout analysis notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/SampleDropoutAnalysis.ipynb) mentioned in section 3 of the supplementary information.
 
 ## About the `input/` folder
 This folder contains the input data for this analysis notebook (note that SILVA
