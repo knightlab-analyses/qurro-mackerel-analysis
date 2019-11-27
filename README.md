@@ -12,8 +12,15 @@ and described in
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
 manuscript.
 
-We recommend using nbviewer to view the notebooks in this repository.
-[**Here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb), and [**here's a link to the notebook that produces Figs. 1(d) and 2(d)**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb).
+## Jupyter Notebooks
+We recommend using [nbviewer](https://nbviewer.jupyter.org/) to view the
+notebooks in this repository:
+
+- [**Here's a link to the main notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/Mackerel%2016S%20Data%20Analysis.ipynb) mentioned at the start of the case study section.
+
+- [**Here's a link to the notebook that produces Figs. 1(d) and 2(d)**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb), as mentioned in the figure captions.
+
+- [**Here's a link to the sample dropout analysis notebook**](https://nbviewer.jupyter.org/github/knightlab-analyses/qurro-mackerel-analysis/blob/master/figures/ProduceLogRatioToEstAgeRegressions.ipynb) mentioned in section 3 of the supplementary information.
 
 ## About the `input/` folder
 This folder contains the input data for this analysis notebook (note that SILVA
@@ -39,7 +46,7 @@ You can view all of the QIIME 2 artifact/visualization files here in
 `https://raw.githubusercontent.com/knightlab-analyses/qurro-mackerel-analysis/master/output/songbird-regression-summary.qzv`,
 where you can replace `songbird-regression-summary.qzv` with whatever the QZA/QZV file you want to view is named.
 
-Examples that'll take you straight to q2view:
+Here are some links that'll take you straight to q2view:
 
  - [Imported feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Ftable-unfiltered-summary.qzv)
  - [Imported and filtered feature table summary](https://view.qiime2.org/visualization/?src=https%3A%2F%2Fraw.githubusercontent.com%2Fknightlab-analyses%2Fqurro-mackerel-analysis%2Fmaster%2Foutput%2Ftable-summary.qzv)
@@ -50,4 +57,4 @@ Examples that'll take you straight to q2view:
 Please see the [README in this folder describing the Qurro paper's figures](https://github.com/knightlab-analyses/qurro-mackerel-analysis/tree/master/figures).
 
 ## Why did you make this README so long?
-It's not *that* long!
+Hey, it's not *that* long!
