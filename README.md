@@ -10,7 +10,7 @@ and described in
 [QIIME 2](https://qiime2.org/),
 [Songbird](https://github.com/biocore/songbird/),
 and [Qurro](https://github.com/biocore/qurro/). This is for the Qurro
-manuscript.
+manuscript (_now available in NAR Genomics and Bioinformatics [here](https://academic.oup.com/nargab/article/2/2/lqaa023/5826153)_).
 
 There are some other notebooks and files in this repository that were used in
 the process of preparing the manuscript, also. Here I'll try to explain some of
